@@ -1,0 +1,473 @@
+/*styles.css*/
+/*-----Variables and mixins-----*/
+/*Fonts*/
+/*Primary Colors*/
+/*Accent Colors*/
+/*Font sizes*/
+/*Font weights*/
+/*Spacing*/
+/*Border styles*/
+/*Border radii*/
+/*Layout and grid*/
+/*Animations and transitions*/
+/*-----Normal, boring stuff-----*/
+html {
+  background-color: #343941; }
+
+body {
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #343941;
+  background: #f5f7fa;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  animation: fadein 1s; }
+
+.skip-main {
+  left: -999px;
+  position: absolute;
+  z-index: -999; }
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #343941;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #5691f0;
+  width: 0%; }
+
+/*Selection*/
+::selection {
+  background: #abcafc;
+  color: #343941; }
+
+::-moz-selection {
+  background: #abcafc;
+  color: #343941; }
+
+::-webkit-selection {
+  background: #abcafc;
+  color: #343941; }
+
+h1, h2, h3, h4 {
+  font-size: 3.998em;
+  font-weight: 800;
+  margin: 0 0 8px -4px;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+h2 {
+  font-size: 2.827em;
+  margin: 0 0 32px 0;
+  padding-bottom: 8px; }
+
+h3 {
+  font-size: 1.999em;
+  margin: 32px 0 24px 0; }
+
+h4 {
+  font-size: 1.4143em;
+  margin: 32px 0 16px 0; }
+
+p, a, ul {
+  color: #59616e;
+  font-weight: 300;
+  line-height: 1.7em;
+  margin: 0 0 16px 0;
+  max-width: 640px;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+strong, b {
+  font-weight: 800; }
+
+blockquote p, blockquote a, blockquote ul {
+  border-left: 4px solid #3071d9;
+  font-size: 1.4143em;
+  padding-left: 32px;
+  min-width: 100%; }
+blockquote footer {
+  margin-top: -64px;
+  padding-left: 32px; }
+
+.blockquote-small p, .blockquote-small a, .blockquote-small ul {
+  font-size: 1em; }
+
+/*-----Picture stuff-----*/
+figure {
+  margin: 0 0 64px 0; }
+
+img {
+  width: 100%;
+  margin: 0 0 16px 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  border: none; }
+
+figcaption {
+  font-size: 0.707em;
+  line-height: 1.5em; }
+
+.figure-image-container {
+  display: block; }
+
+/*-----Link stuff-----*/
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #3071d9;
+  -o-transition: 0.1s ease-in-out;
+  -ms-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  border-radius: 1px; }
+
+a:hover, a:focus {
+  background-color: #abcafc;
+  border-bottom: 1px solid #abcafc;
+  color: black; }
+
+a:focus {
+  outline: 2px dashed #59616e;
+  outline-radius: 1px;
+  outline-offset: 4px; }
+
+.skip-main:focus, .skip-main:active {
+  left: auto;
+  top: 8px;
+  overflow: auto;
+  z-index: 999;
+  background-color: #5691f0;
+  color: white;
+  padding: 16px; }
+
+/*-----List stuff-----*/
+ul {
+  list-style-type: disc;
+  list-style-position: oustide;
+  margin-left: 32px; }
+
+li {
+  margin-bottom: 16px; }
+
+.list-short li {
+  margin-left: -16px;
+  margin-bottom: 4px; }
+
+/*-----Stuff that slightly modifies the boring stuff-----*/
+#about-header {
+  margin: 0 0 64px; }
+
+.masthead {
+  background-color: #ebeff5;
+  padding-bottom: 64px;
+  margin-bottom: 128px;
+  border-bottom: 1px solid #c8d1e0; }
+
+.hero-text-h {
+  font-size: 3.998em;
+  margin-bottom: 16px; }
+
+.hero-text {
+  font-size: 1.4143em;
+  font-weight: 300;
+  line-height: 1.5em;
+  max-width: 100%;
+  color: #343941; }
+
+.hero-text-h:hover span {
+  display: none; }
+
+.hero-text-h:hover:after {
+  content: '(loot-grr).'; }
+
+.subtitle {
+  font-size: 1.4143em;
+  font-weight: 300;
+  max-width: none; }
+
+.subtitle-h3 {
+  margin: -16px 0 16px 0; }
+
+/*-----Things for the part with all the links-----*/
+nav a {
+  display: inline-block;
+  margin: 0 16px 0 0;
+  color: #343941;
+  border-bottom: none; }
+nav a:hover, nav a:focus {
+  border-bottom: none; }
+
+header {
+  padding: 128px 0 0 0;
+  margin: 0 0 64px 0; }
+  header a {
+    line-height: 32px; }
+
+.active-page {
+  font-weight: 700;
+  color: #3071d9;
+  border-bottom: 4px solid #3071d9; }
+
+.active-page:hover {
+  border-bottom: 4px solid #abcafc; }
+
+.active-page:focus {
+  border-bottom: 4px solid #abcafc; }
+
+/*The logo part*/
+a.logo {
+  font-size: 1.4143em;
+  font-weight: 800;
+  margin: 0 32px 0 0; }
+
+a.logo:hover, a.logo:focus {
+  color: #626b7a;
+  border-bottom: none;
+  background-color: #f5f7fa; }
+
+.index-header {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.logo img {
+  background-color: transparent;
+  padding: 0 0 0 0;
+  margin: 0 0 -4px 0;
+  border-radius: 0; }
+
+/*-----Things for the part where most of the writing is----*/
+section {
+  padding: 0 0 0 0;
+  margin: 0 0 64px 0; }
+
+.section-1 {
+  padding: 0 0 64px 0;
+  border-bottom: 1px solid #c8d0e0;
+  margin: 0 0 64px 0; }
+
+.section-medium {
+  margin: 0 0 32px 0; }
+
+.section-small {
+  margin: 0 0 16px 0; }
+
+.work-list {
+  list-style-type: none; }
+  .work-list li {
+    margin-left: -32px;
+    margin-bottom: -8px;
+    font-weight: 700; }
+  .work-list a {
+    font-weight: 700;
+    color: #343941; }
+
+.disclaimer {
+  padding: 32px;
+  background-color: #dde9fe;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  color: #1d5bbf; }
+  .disclaimer h2 {
+    font-size: 1em;
+    margin-bottom: 0; }
+  .disclaimer p, .disclaimer a, .disclaimer ul {
+    margin: 0; }
+
+.claim {
+  color: #3071d9; }
+
+.weak {
+  color: #626b7a; }
+
+.impact-number {
+  font-size: 3.998em;
+  font-weight: 700;
+  color: #3071d9;
+  margin-bottom: 0;
+  line-height: 1em; }
+
+.impact-description {
+  font-weight: 700; }
+
+/*-----Footnotes-----*/
+.footnote {
+  position: relative;
+  vertical-align: baseline; }
+
+.footnoteNumber {
+  vertical-align: super;
+  font-size: .7em;
+  line-height: 0;
+  color: #3071d9;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid #1d5bbf; }
+
+.footnoteText {
+  font-size: .7em;
+  line-height: 1.75em;
+  display: block;
+  width: 200px;
+  position: absolute;
+  left: 25px;
+  bottom: 5px;
+  border: 1px solid #59616e;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 100;
+  overflow: auto;
+  margin: 0 0 0 0; }
+
+/*-----Project nav stuff-----*/
+.project-nav {
+  border-top: 1px solid #c8d1e0; }
+  .project-nav a {
+    padding: 32px 0 32px 0;
+    font-weight: 700;
+    margin-bottom: -16px; }
+
+.proj-prev {
+  border-right: 1px solid #c8d1e0; }
+
+.proj-next {
+  text-align: right; }
+
+/*-----Footer stuff-----*/
+footer {
+  margin: 16px 0 0 0;
+  border-top: 1px solid #c8d1e0;
+  padding: 64px 0 64px 0;
+  background-color: #ebeff5; }
+  footer a {
+    font-weight: 800;
+    color: #343941; }
+
+.copyright {
+  font-size: 0.707em;
+  margin: 8px 0 0 0; }
+  .copyright a {
+    font-weight: 400;
+    border-bottom: 1px solid #1d5bbf; }
+
+blockquote footer {
+  background-color: transparent;
+  margin: none;
+  border: none;
+  padding: none; }
+
+/*------Stuff for the part where I talk about myself-----*/
+#about-image {
+  max-width: 256px;
+  border: 8px solid white;
+  border-radius: 256px;
+  margin-top: -256px;
+  background-color: #c8d1e0;
+  height: 256px; }
+
+/*-----Stuff that hopefully makes the animations work-----*/
+/*-Stuff that makes the page fade in-*/
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/*-----Stuff that makes the site not too ugly on very big or very small screens-----*/
+@media (max-width: 768px) {
+  body {
+    padding: 0 8px 0 8px; }
+
+  #about-image {
+    border: 8px solid white;
+    border-radius: 256px;
+    display: block;
+    margin: 64px auto 0 auto; } }
+@media (max-width: 480px) {
+  body {
+    font-size: 16px; }
+
+  .hero-text {
+    font-size: 1.4143em;
+    line-height: 1.5em; }
+
+  h1, h2, h3, h4 {
+    font-size: 2.827em;
+    font-weight: 800;
+    line-height: 1.1em; }
+
+  #about-header {
+    margin: 0 0 32px; }
+
+  h2 {
+    font-size: 1.4143em;
+    margin: 0 0 32px 0; }
+
+  .subtitle {
+    font-size: 1em;
+    margin: 0 0 32px 0;
+    line-height: 1.5em; }
+
+  h3 {
+    font-size: 1em; }
+
+  h4 {
+    font-size: 0.8em; }
+
+  .masthead {
+    margin-bottom: 64px;
+    padding-bottom: 32px; }
+
+  p, a, ul {
+    margin-bottom: 16px; }
+
+  section {
+    margin-bottom: 8px; }
+
+  blockquote p, blockquote a, blockquote ul {
+    padding-left: 16px;
+    font-size: 1em; } }
