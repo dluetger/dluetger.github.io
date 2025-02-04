@@ -123,6 +123,7 @@ figcaption {
   color: hsl(194.33, 0%, 13.15%);
 }
 
+/*Breakpoints*/
 .masthead {
   padding-bottom: 64px;
   margin-bottom: 64px;
@@ -146,6 +147,11 @@ figcaption {
   line-height: 1.4em;
   max-width: none;
   margin: 0 0 32px 0;
+}
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 1em;
+  }
 }
 
 .project-details h2 {
@@ -176,6 +182,16 @@ header a, header a.logo:focus {
 .site-nav {
   font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
 }
+@media (max-width: 480px) {
+  .site-nav {
+    font-size: 0.707em;
+  }
+}
+@media (max-width: 480px) {
+  .site-nav a, .site-nav a.logo:focus {
+    margin: 0 8px 0 0;
+  }
+}
 
 /*Temorarily adjusting the color this way until I get around to properly changing the svg*/
 .logo, a.logo:focus {
@@ -187,6 +203,11 @@ a.logo, a.logo:focus {
   font-size: 1.4143em;
   font-weight: 800;
   margin: 0 32px 0 0;
+}
+@media (max-width: 480px) {
+  a.logo, a.logo:focus {
+    margin: 0 8px 0 0;
+  }
 }
 
 a.logo:hover, a.logo:focus {
@@ -234,65 +255,7 @@ footer .social-links a {
   color: hsl(194.33, 0%, 96.6%);
 }
 
-/*-----Stuff that makes the site not too ugly on very big or very small screens-----*/
 /*Breakpoints*/
-@media (max-width: 768px) {
-  body {
-    padding: 0 8px 0 8px;
-  }
-  #about-image {
-    border: 8px solid white;
-    border-radius: 256px;
-    display: block;
-    margin: 64px auto 0 auto;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    font-size: 16px;
-  }
-  .hero-text {
-    font-size: 1.4143em;
-    line-height: 1.4em;
-  }
-  h1, h2, h3, h4 {
-    font-size: 2.827em;
-    font-weight: 800;
-    line-height: 1.1em;
-  }
-  #about-header {
-    margin: 0 0 32px;
-  }
-  h2 {
-    font-size: 1.4143em;
-    margin: 0 0 32px 0;
-  }
-  .subtitle {
-    font-size: 1em;
-    margin: 0 0 32px 0;
-    line-height: 1.5em;
-  }
-  h3 {
-    font-size: 1em;
-  }
-  h4 {
-    font-size: 0.8em;
-  }
-  .masthead {
-    margin-bottom: 64px;
-    padding-bottom: 32px;
-  }
-  p, a {
-    margin-bottom: 16px;
-  }
-  section {
-    margin-bottom: 8px;
-  }
-  blockquote p, blockquote a {
-    padding-left: 16px;
-    font-size: 1em;
-  }
-}
 /*-----Normal, boring stuff-----*/
 html {
   background-color: #111;
@@ -341,6 +304,11 @@ h1, h4, h3, h2 {
   -moz-transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+@media (max-width: 480px) {
+  h1, h4, h3, h2 {
+    font-size: 1.999em;
+  }
 }
 
 h2 {
