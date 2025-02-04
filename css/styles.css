@@ -140,6 +140,11 @@ figcaption {
   line-height: 1.4em;
   max-width: 100%;
 }
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.4143em;
+  }
+}
 
 .subtitle {
   font-size: 1.4143em;
