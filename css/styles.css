@@ -62,11 +62,6 @@ li {
   margin-bottom: 16px;
 }
 
-.list-short li {
-  margin-left: -16px;
-  margin-bottom: 4px;
-}
-
 figure {
   margin: 0 0 64px 0;
 }
@@ -175,6 +170,8 @@ figcaption {
   font-size: 0.707em;
   line-height: 1.2em;
   font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  margin-left: -16px;
+  margin-bottom: 4px;
 }
 
 .resume h2 {
