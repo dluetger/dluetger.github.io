@@ -19,12 +19,9 @@
 </head>
 
 <body>
-<!-- 	<div class="progress-container"></div> -->
-
-<!--The big section at the top that says who I am and has the navigation.-->
-	<div class="masthead">
+		<!--The big part at the top that shows the title and stuff-->
+		<a class="skip-main" href="#main">Skip to main content</a>
 		<header>
-			<a class="skip-main" href="#main">Skip to main content</a>
 			<div class="grid-container">
 				<div class="prefix-10 grid-80 suffix-10">
 					<nav class="site-nav">
@@ -66,23 +63,5 @@
 			</div>
 		</div>	
 	</footer>
-
-	<!--Other computery bits that make the site work. Beep boop.-->
-	<!--Version of jQuery that makes the footnotes work-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<!--Script that does the little footnotes. Lovingly borrowed from Randall Munroe at xkcd.com-->
-    <script>
-      jQuery.noConflict();
-      jQuery(function() {
-        jQuery("span.footnoteText").hide();
-        jQuery("span.footnoteNumber").click(function(event) {
-          jQuery(this.nextSibling).toggle();
-          event.stopPropagation();
-        });
-        jQuery("body").click(function(event) {
-          jQuery("span.footNoteText").hide();
-        });
-      });
-    </script>
 </body>
 </html>

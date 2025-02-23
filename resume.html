@@ -3,7 +3,7 @@
 <head>
 	<title>Resume // Dave Luetger</title>
 	<meta name="description" content="Designer, musician, tv watcher, and human"/>
-<!--CSS that makes the browser not do stupid default stuff to the styling.-->
+	<!--CSS that makes the browser not do silly default stuff to the styling.-->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!--CSS that makes it easy to layout stuff on the page-->
 	<link rel="stylesheet" type="text/css" href="css/unsemantic-grid-responsive.css">
@@ -20,20 +20,20 @@
 
 <body>
   <!--The big part at the top that shows the title and stuff-->
-	<a class="skip-main" href="#main">Skip to main content</a>
-	<header>
-		<div class="grid-container">
-			<div class="prefix-10 grid-80 suffix-10">
-				<nav class="site-nav">
-					<a class="logo" href="index.html"><img src="img/general/d.svg" alt="Dave Luetger"></a>
-					<a href="work.html">Work</a>
-					<!-- <a href="#">Speaking</a> -->
-					<a href="resume.html">Resume</a>
-					<a href="about.html">About</a>
-				</nav>
-			</div>
-		</div>
-	</header>
+  <a class="skip-main" href="#main">Skip to main content</a>
+  <header>
+  	<div class="grid-container">
+  		<div class="prefix-10 grid-80 suffix-10">
+  			<nav class="site-nav">
+  				<a class="logo" href="index.html"><img src="img/general/d.svg" alt="Dave Luetger"></a>
+  				<a href="work.html">Work</a>
+  				<!-- <a href="#">Speaking</a> -->
+  				<a href="resume.html">Resume</a>
+  				<a href="about.html">About</a>
+  			</nav>
+  		</div>
+  	</div>
+  </header>
 	<div class="grid-container content">
 		<!--The big main part that has the story-->
 		<div id="main" class="prefix-10 grid-80 suffix-10">
@@ -144,6 +144,8 @@
 			</section>
 		</div>
 	</div>
+	
+	<!--The part at the bottom that shows how to contact me and other things.-->
 	<footer>
 		<div class="grid-container">
 			<div class="prefix-10 grid-80 suffix-10">
@@ -162,32 +164,5 @@
 			</div>
 		</div>	
 	</footer>
-	<!--Version of jQuery that makes the footnotes work-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<!--Script that does the little footnotes. Lovingly borrowed from Randall Munroe at xkcd.com-->
-    <script>
-      jQuery.noConflict();
-      jQuery(function() {
-        jQuery("span.footnoteText").hide();
-        jQuery("span.footnoteNumber").click(function(event) {
-          jQuery(this.nextSibling).toggle();
-          event.stopPropagation();
-        });
-        jQuery("body").click(function(event) {
-          jQuery("span.footNoteText").hide();
-        });
-      });
-    </script>
-    <!--Script that does the progress bar-->
-	<script>
-		window.onscroll = function() {barScroll()};
-
-		function barScroll() {
-		  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-		  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-		  var scrolled = (winScroll / height) * 100;
-		  document.getElementById("progress").style.width = scrolled + "%";
-		}
-	</script>
 </body>
 </html>

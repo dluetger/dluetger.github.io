@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>NASA HCI Design System / Dave Luetger</title>
+	<title>NASA HCI Design System // Dave Luetger</title>
 	<meta name="description" content="Designer, musician, tv watcher, and human"/>
-<!--CSS that makes the browser not do stupid default stuff to the styling.-->
+	<!--CSS that makes the browser not do silly default stuff to the styling.-->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!--CSS that makes it easy to layout stuff on the page-->
 	<link rel="stylesheet" type="text/css" href="css/unsemantic-grid-responsive.css">
@@ -12,34 +12,29 @@
 	<!--Favicon-->
 	<link rel="icon" type="image/png" href="favicon.png">
 	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
 </head>
 
 <body>
-	<!--The part at the very top that shows how far you've gone-->
-	<div class="progress-container">
-    	<div class="progress-bar" id="progress"></div>
-  	</div> 
-
-  	<!--The big part at the top that shows the title and stuff-->
-  	<div class="masthead">
-  		<a class="skip-main" href="#main">Skip to main content</a>
-		<header>
-			<div class="grid-container">
-				<div class="prefix-10 grid-80 suffix-10">
-					<nav>
-						<a class="logo" href="index.html"><img src="img/general/d.svg" alt="Dave Luetger"></a>
-						<a href="index.html" class="active-page">Work</a>
-						<!--<a href="#">Speaking</a>-->
-						<a href="resume.html">Resume</a>
-						<a href="about.html">About</a>
-					</nav>
-				</div>
+	<!--The big part at the top that shows the title and stuff-->
+	<a class="skip-main" href="#main">Skip to main content</a>
+	<header>
+		<div class="grid-container">
+			<div class="prefix-10 grid-80 suffix-10">
+				<nav class="site-nav">
+					<a class="logo" href="index.html"><img src="img/general/d.svg" alt="Dave Luetger"></a>
+					<a href="work.html">Work</a>
+					<!-- <a href="#">Speaking</a> -->
+					<a href="resume.html">Resume</a>
+					<a href="about.html">About</a>
+				</nav>
 			</div>
-		</header>
-		<div id="main" class="grid-container">
+		</div>
+	</header>
+	<div id="main" class="grid-container">
 			<div class="prefix-10 grid-80 suffix-10">
 				<h1>NASA HCI Design System</h1>
 				<p class="subtitle">Making it easier to create quality digital products for the agency</p>
@@ -268,27 +263,16 @@
 		</section> -->
 	</div>
 
-	<!--The part where you can quickly get to another project-->
-<!-- 	<div class="project-nav">
-		<div class="grid-container">
-			<div class="prefix-10 grid-80 suffix-10 grid-parent">	
-				<nav>		
-					<a class="grid-50 mobile-grid-100 proj-prev" href="schematics.html">Previous project: <br/>  NASA Schematics Catalog</a>
-					<a class="grid-45 mobile-grid-100 proj-next" href="sls.html">Next project: <br/>SLS Data Exchange (DEx)</a>
-				</nav>
-			</div>
-		</div>
-	</div> -->
-
-	<!--The big bottom part-->
+	<!--The part at the bottom that shows how to contact me and other things.-->
 	<footer>
 		<div class="grid-container">
 			<div class="prefix-10 grid-80 suffix-10">
-				<nav>
-					<a href="mailto: dave@luetger.com">dave@luetger.com</a>
-					<a href="https://twitter.com/dluetger">@dluetger</a>
+				<nav class="social-links">
+					<a href="mailto: dluetger@gmail.com">Email</a>
+					<!-- <a href="resume.pdf">Resume</a> -->
+					<a href="https://www.linkedin.com/in/davidluetger">LinkedIn</a>
 				</nav>
-				<p class="copyright">Made by <a href="index.html">Dave</a> in 
+				<p class="copyright">Designed and built by <a href="index.html">Dave</a> in 
 							<script language="javascript" type="text/javascript">
 							var today = new Date()
 							var year = today.getFullYear()
@@ -296,34 +280,7 @@
 							</script>.
 				</p>
 			</div>
-		</div>
-
-	<!--Version of jQuery that makes the footnotes work-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<!--Script that does the little footnotes. Lovingly borrowed from Randall Munroe at xkcd.com-->
-    <script>
-      jQuery.noConflict();
-      jQuery(function() {
-        jQuery("span.footnoteText").hide();
-        jQuery("span.footnoteNumber").click(function(event) {
-          jQuery(this.nextSibling).toggle();
-          event.stopPropagation();
-        });
-        jQuery("body").click(function(event) {
-          jQuery("span.footNoteText").hide();
-        });
-      });
-    </script>
-    <!--Script that does the progress bar-->
-	<script>
-		window.onscroll = function() {barScroll()};
-
-		function barScroll() {
-		  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-		  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-		  var scrolled = (winScroll / height) * 100;
-		  document.getElementById("progress").style.width = scrolled + "%";
-		}
-	</script>
+		</div>	
+	</footer>
 </body>
 </html>
