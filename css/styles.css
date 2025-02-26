@@ -1,7 +1,7 @@
-/*Grays - [DEPRECATED]*/
 /* gray */
-/*Primary Colors*/
-/*Accent Colors*/
+/*light mode grays (reverse order)*/
+/*global*/
+/*light mode globals*/
 /*Font*/
 /*Font sizes*/
 /*Font weights*/
@@ -56,10 +56,11 @@ ul {
   list-style-position: oustide;
   line-height: 1.7em;
   margin-left: 32px;
+  font-weight: 300;
 }
 
 li {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 figure {
@@ -129,12 +130,10 @@ figcaption {
 }
 .work-list a {
   font-weight: 700;
-  color: hsl(194.33, 0%, 88.76%);
   border: none;
 }
 .work-list a:focus {
   font-weight: 700;
-  color: hsl(194.33, 0%, 13.15%);
 }
 
 .masthead {
@@ -225,6 +224,7 @@ header a, header a.logo:focus {
 .logo, a.logo:focus {
   -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
   filter: invert(100%);
+  padding: 4px 8px 4px 8px;
 }
 
 a.logo, a.logo:focus {
@@ -240,7 +240,8 @@ a.logo, a.logo:focus {
 
 a.logo:hover, a.logo:focus {
   border-bottom: none;
-  background-color: hsl(194.33, 0%, 13.15%);
+  background-color: transparent;
+  opacity: 50%;
 }
 
 .index-header {
@@ -261,7 +262,7 @@ a.logo:hover, a.logo:focus {
 
 /* The part that shows how to pronounce my name */
 footer {
-  margin: 16px 0 0 0;
+  margin: auto 0 0 0;
   padding: 64px 0 64px 0;
 }
 footer .social-links {
@@ -280,13 +281,13 @@ footer .social-links a {
 .copyright a {
   font-weight: 400;
   border-bottom: 1px solid hsl(194.33, 0%, 88.76%);
-  color: hsl(194.33, 0%, 96.6%);
+  color: hsl(194.33, 0%, 88.76%);
 }
 
 /*Breakpoints*/
 /*-----Normal, boring stuff-----*/
 html {
-  background-color: #111;
+  background-color: hsl(0, 0%, 6.7%);
 }
 
 body {
@@ -298,6 +299,7 @@ body {
   -moz-animation: fadein 1s;
   -ms-animation: fadein 1s;
   animation: fadein 1s;
+  min-height: 100vh;
 }
 
 .skip-main {
@@ -308,17 +310,17 @@ body {
 
 /*Selection*/
 ::selection {
-  background: hsl(194.33, 0%, 96.6%);
+  background: hsl(194.33, 0%, 88.76%);
   color: hsl(194.33, 0%, 13.15%);
 }
 
 ::-moz-selection {
-  background: hsl(194.33, 0%, 96.6%);
+  background: hsl(194.33, 0%, 88.76%);
   color: hsl(194.33, 0%, 13.15%);
 }
 
 ::-webkit-selection {
-  background: hsl(194.33, 0%, 96.6%);
+  background: hsl(194.33, 0%, 88.76%);
   color: hsl(194.33, 0%, 13.15%);
 }
 
@@ -412,8 +414,8 @@ section {
   top: 8px;
   overflow: auto;
   z-index: 999;
-  background-color: hsl(194.33, 0%, 88.76%);
-  color: hsl(194.33, 0%, 13.15%);
+  background-color: hsl(0, 0%, 6.7%);
+  color: hsl(194.33, 0%, 88.76%);
   padding: 16px;
 }
 
@@ -427,10 +429,8 @@ nav a {
 }
 nav a:hover {
   border-bottom: none;
-  color: hsl(194.33, 0%, 13.15%);
 }
 nav a:focus {
   border-bottom: none;
   outline: 0;
-  color: hsl(194.33, 0%, 13.15%);
 }
