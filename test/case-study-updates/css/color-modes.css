@@ -1,0 +1,77 @@
+/* gray */
+/*light mode grays (reverse order)*/
+/*global*/
+/*light mode globals*/
+/*Border styles*/
+/*light mode grays (reverse order)*/
+/*global*/
+@media (prefers-color-scheme: light) {
+  :root html {
+    background-color: hsl(194.33, 0%, 96.6%);
+  }
+  :root body {
+    background-color: hsl(194.33, 0%, 96.6%);
+  }
+  :root body {
+    color: hsl(194.33, 0%, 24.13%);
+  }
+  :root .logo, :root a.logo:focus {
+    -webkit-filter: invert(0%); /* safari 6.0 - 9.0 */
+    filter: invert(0%);
+  }
+  :root ::selection {
+    background: hsl(194.33, 0%, 24.13%);
+    color: hsl(194.33, 0%, 96.6%);
+  }
+  :root ::-moz-selection {
+    background: hsl(194.33, 0%, 24.13%);
+    color: hsl(194.33, 0%, 96.6%);
+  }
+  :root ::-webkit-selection {
+    background: hsl(194.33, 0%, 24.13%);
+    color: hsl(194.33, 0%, 96.6%);
+  }
+  :root a, :root a.logo:focus {
+    border-bottom: 1px solid hsl(194.33, 0%, 13.15%);
+    color: hsl(194.33, 0%, 24.13%);
+  }
+  :root a:hover, :root a.logo:focus {
+    background-color: hsl(194.33, 0%, 24.13%);
+    border-bottom: 1px solid hsl(194.33, 0%, 24.13%);
+    color: hsl(194.33, 0%, 96.6%);
+  }
+  :root a:focus, :root a.logo:focus {
+    background-color: hsl(194.33, 0%, 24.13%);
+    border-bottom: 1px solid hsl(194.33, 0%, 24.13%);
+    color: hsl(194.33, 0%, 96.6%);
+  }
+  :root .skip-main:focus, :root .skip-main:active {
+    background-color: hsl(194.33, 0%, 96.6%);
+    color: hsl(194.33, 0%, 24.13%);
+  }
+  :root nav a, :root nav a.logo:focus {
+    color: hsl(194.33, 0%, 24.13%);
+    border: none;
+  }
+  :root nav a:hover, :root nav a.logo:focus {
+    border: none;
+  }
+  :root nav a:focus, :root nav a.logo:focus {
+    border-bottom: none;
+  }
+  :root a.logo:hover, :root a.logo:focus {
+    border-bottom: none;
+    background-color: transparent;
+    opacity: 50%;
+  }
+  :root .work-list a, :root .work-list a.logo:focus {
+    border: none;
+  }
+  :root .copyright a, :root .copyright a.logo:focus {
+    color: hsl(194.33, 0%, 24.13%);
+    border-bottom: 1px solid hsl(194.33, 0%, 13.15%);
+  }
+  :root .big-quote {
+    border-left: 4px solid hsl(194.33, 0%, 13.15%);
+  }
+}

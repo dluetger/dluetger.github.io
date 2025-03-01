@@ -1,0 +1,510 @@
+/* gray */
+/*light mode grays (reverse order)*/
+/*global*/
+/*light mode globals*/
+/*Font*/
+/*Font sizes (Trial set as of Feb 27, "Minor Thirds")*/
+/*Font weights*/
+/*Line heights*/
+/*Spacing*/
+/*Border styles*/
+/*Animations and transitions*/
+/*-----Stuff that hopefully makes the animations work-----*/
+/*-Stuff that makes the page fade in-*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ul {
+  list-style-type: disc;
+  list-style-position: oustide;
+  line-height: 1.6em;
+  font-weight: 300;
+  margin: 0 0 16px 16px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+figure {
+  margin: 0 0 64px 0;
+}
+
+img {
+  width: 100%;
+  margin: 0 0 16px 0;
+  border: none;
+}
+
+.case-study-img {
+  clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.case-study-hero {
+  margin-bottom: 64px;
+}
+
+figcaption {
+  font-size: 0.833rem;
+  line-height: 1.5em;
+}
+
+.figure-image-container {
+  display: block;
+}
+
+/*Breakpoints*/
+.index {
+  padding: 64px 0 0 0;
+}
+
+.hero-text-h {
+  font-size: 2.986rem;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-size: 2.074rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  max-width: 100%;
+  margin-bottom: 128px;
+}
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.728rem;
+  }
+}
+
+.work-list {
+  list-style-type: none;
+  margin-bottom: 128px;
+}
+.work-list p, .work-list blockquote, .work-list a {
+  margin-top: 4px;
+  line-height: 1.4em;
+}
+.work-list li {
+  margin-top: 32px;
+  margin-left: -16px;
+  font-weight: 700;
+}
+.work-list a {
+  font-weight: 700;
+  border: none;
+  margin-bottom: 4px;
+  font-size: 1.728rem;
+}
+.work-list a:focus {
+  font-weight: 700;
+}
+
+.masthead {
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+}
+
+.subtitle {
+  font-size: 1.44rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  max-width: none;
+  margin: 0 0 32px 0;
+}
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+.case-study-block {
+  margin-bottom: 64px;
+}
+@media (max-width: 480px) {
+  .case-study-block {
+    margin-bottom: 32px;
+  }
+}
+
+figure {
+  margin: 0 0 32px 0;
+}
+
+figcaption {
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  font-size: 0.833rem;
+  max-width: 72ch;
+}
+@media (max-width: 480px) {
+  figcaption {
+    font-size: 0.694rem;
+  }
+}
+
+.big-quote {
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  font-size: 1.44rem;
+  max-width: none;
+  margin: 64px;
+  padding-left: 32px;
+  border-left: 4px solid hsl(194.33, 0%, 88.76%);
+}
+@media (max-width: 480px) {
+  .big-quote {
+    font-size: 1rem;
+    margin: 64px 0;
+  }
+}
+
+.project-details h2 {
+  font-size: 1.728rem;
+  margin-bottom: 8px;
+}
+.project-details h3 {
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.project-details p, .project-details blockquote, .project-details a {
+  font-size: 0.833rem;
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  line-height: 1.1em;
+  margin-bottom: 16px;
+}
+.project-details ul {
+  margin-bottom: 16px;
+}
+.project-details li {
+  font-size: 0.833rem;
+  line-height: 1.1em;
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  margin-left: -8px;
+  margin-bottom: 4px;
+}
+
+.resume h2 {
+  line-height: 1.1em;
+}
+.resume h3 {
+  margin: 32px 0 0 0;
+  font-size: 1.728rem;
+}
+.resume li {
+  margin-bottom: 4px;
+}
+.resume .grid-33 {
+  padding: 0;
+}
+.resume .grid-33 h3 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.position-title {
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+}
+@media (max-width: 480px) {
+  .position-title {
+    font-size: 0.833rem;
+  }
+}
+
+.about h2 {
+  font-size: 1.728rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+header {
+  padding: 64px 0 0 0;
+  margin: 0 0 64px 0;
+}
+header a, header a.logo:focus {
+  line-height: 32px;
+}
+
+.site-nav {
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+}
+@media (max-width: 480px) {
+  .site-nav {
+    font-size: 0.833rem;
+  }
+}
+@media (max-width: 480px) {
+  .site-nav a, .site-nav a.logo:focus {
+    margin: 0 8px 0 0;
+  }
+}
+
+/*Temorarily adjusting the color this way until I get around to properly changing the svg*/
+.logo, a.logo:focus {
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+  padding: 4px 8px 4px 8px;
+}
+
+a.logo, a.logo:focus {
+  font-size: 1.728rem;
+  font-weight: 800;
+  margin: 0 32px 0 0;
+}
+@media (max-width: 480px) {
+  a.logo, a.logo:focus {
+    margin: 0 8px 0 0;
+  }
+}
+
+a.logo:hover, a.logo:focus {
+  border-bottom: none;
+  background-color: transparent;
+  opacity: 50%;
+}
+
+.index-header {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.logo img, a.logo:focus img {
+  background-color: transparent;
+  padding: 0 0 0 0;
+  margin: 0 0 -4px 0;
+  border-radius: 0;
+}
+
+/* The part that shows how to pronounce my name */
+footer {
+  margin: auto 0 0 0;
+  padding: 64px 0 64px 0;
+}
+footer .social-links {
+  margin: 0 0 8px -8px;
+  font-size: 0.833rem;
+}
+footer .social-links a {
+  padding: 0 8px 0 8px;
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+}
+
+.copyright {
+  font-size: 0.833rem;
+  margin: 8px 0 0 0;
+}
+.copyright a {
+  font-weight: 400;
+  border-bottom: 1px solid hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 88.76%);
+}
+
+/*Breakpoints*/
+/*-----Normal, boring stuff-----*/
+html {
+  background-color: hsl(0, 0%, 6.7%);
+}
+
+body {
+  font-family: "Public Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: hsl(194.33, 0%, 88.76%);
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  animation: fadein 1s;
+  min-height: 100vh;
+}
+
+.skip-main {
+  left: -999px;
+  position: absolute;
+  z-index: -999;
+}
+
+/*Selection*/
+::selection {
+  background: hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 13.15%);
+}
+
+::-moz-selection {
+  background: hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 13.15%);
+}
+
+::-webkit-selection {
+  background: hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 13.15%);
+}
+
+h1, h4, h3, h2 {
+  font-size: 2.986rem;
+  font-weight: 800;
+  line-height: 1.1em;
+  margin: 0 0 16px 0;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 480px) {
+  h1, h4, h3, h2 {
+    font-size: 2.488rem;
+  }
+}
+
+h2 {
+  font-size: 2.488rem;
+  margin: 0 0 32px 0;
+  text-wrap: balance;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2.074rem;
+  }
+}
+
+h3 {
+  font-size: 2.074rem;
+  margin: 32px 0 24px 0;
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.728rem;
+  }
+}
+
+h4 {
+  font-size: 1.728rem;
+  margin: 32px 0 16px 0;
+}
+@media (max-width: 480px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+p, a, blockquote {
+  font-weight: 300;
+  line-height: 1.6em;
+  margin: 0 0 16px 0;
+  max-width: 72ch;
+  -o-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+strong, b {
+  font-weight: 800;
+}
+
+em {
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 64px;
+}
+
+/*-----Link stuff-----*/
+a {
+  text-decoration: none;
+  border-bottom: 1px solid hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 88.76%);
+  -o-transition: 0.1s ease-in-out;
+  -ms-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  border-radius: 1px;
+}
+
+a:hover {
+  background-color: hsl(194.33, 0%, 88.76%);
+  border-bottom: 1px solid hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 13.15%);
+}
+
+a:focus {
+  background-color: hsl(194.33, 0%, 88.76%);
+  border-bottom: 1px solid hsl(194.33, 0%, 88.76%);
+  color: hsl(194.33, 0%, 13.15%);
+  outline: none;
+}
+
+.skip-main:focus, .skip-main:active {
+  left: auto;
+  top: 8px;
+  overflow: auto;
+  z-index: 999;
+  background-color: hsl(0, 0%, 6.7%);
+  color: hsl(194.33, 0%, 88.76%);
+  padding: 16px;
+}
+
+/*-----Things for the part with all the links-----*/
+nav a {
+  display: inline-block;
+  margin: 0 16px 0 0;
+  color: hsl(194.33, 0%, 88.76%);
+  border-bottom: none;
+  padding: 0 8px 0 8px;
+}
+nav a:hover {
+  border-bottom: none;
+}
+nav a:focus {
+  border-bottom: none;
+  outline: 0;
+}
