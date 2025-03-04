@@ -71,4 +71,7 @@
     color: hsl(194.33, 0%, 24.13%);
     border-bottom: 1px solid hsl(194.33, 0%, 13.15%);
   }
+  :root .big-quote {
+    border-left: 4px solid hsl(194.33, 0%, 13.15%);
+  }
 }

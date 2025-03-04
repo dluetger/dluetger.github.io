@@ -3,7 +3,7 @@
 /*global*/
 /*light mode globals*/
 /*Font*/
-/*Font sizes*/
+/*Font sizes (Trial set as of Feb 27, "Minor Thirds")*/
 /*Font weights*/
 /*Line heights*/
 /*Spacing*/
@@ -54,9 +54,9 @@
 ul {
   list-style-type: disc;
   list-style-position: oustide;
-  line-height: 1.7em;
-  margin-left: 32px;
+  line-height: 1.6em;
   font-weight: 300;
+  margin: 0 0 16px 16px;
 }
 
 li {
@@ -86,7 +86,7 @@ img {
 }
 
 figcaption {
-  font-size: 0.707em;
+  font-size: 0.833rem;
   line-height: 1.5em;
 }
 
@@ -95,13 +95,17 @@ figcaption {
 }
 
 /*Breakpoints*/
+.index {
+  padding: 64px 0 0 0;
+}
+
 .hero-text-h {
-  font-size: 3.998em;
+  font-size: 2.986rem;
   margin-bottom: 16px;
 }
 
 .hero-text {
-  font-size: 1.999em;
+  font-size: 2.074rem;
   font-weight: 700;
   line-height: 1.4em;
   max-width: 100%;
@@ -109,28 +113,28 @@ figcaption {
 }
 @media (max-width: 480px) {
   .hero-text {
-    font-size: 1.4143em;
+    font-size: 1.728rem;
   }
 }
 
 .work-list {
   list-style-type: none;
+  margin-bottom: 128px;
 }
-.work-list h3 {
-  margin-bottom: 4px;
-  font-size: 1.4143em;
-}
-.work-list p, .work-list a {
+.work-list p, .work-list blockquote, .work-list a {
   margin-top: 4px;
   line-height: 1.4em;
 }
 .work-list li {
-  margin-left: -32px;
+  margin-top: 32px;
+  margin-left: -16px;
   font-weight: 700;
 }
 .work-list a {
   font-weight: 700;
   border: none;
+  margin-bottom: 4px;
+  font-size: 1.728rem;
 }
 .work-list a:focus {
   font-weight: 700;
@@ -142,7 +146,7 @@ figcaption {
 }
 
 .subtitle {
-  font-size: 1.4143em;
+  font-size: 1.44rem;
   font-weight: 300;
   line-height: 1.4em;
   max-width: none;
@@ -150,34 +154,81 @@ figcaption {
 }
 @media (max-width: 480px) {
   .subtitle {
-    font-size: 1em;
+    font-size: 1rem;
+  }
+}
+
+.case-study-block {
+  margin-bottom: 64px;
+}
+@media (max-width: 480px) {
+  .case-study-block {
+    margin-bottom: 32px;
+  }
+}
+
+figure {
+  margin: 0 0 32px 0;
+}
+
+figcaption {
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  font-size: 0.833rem;
+  max-width: 72ch;
+}
+@media (max-width: 480px) {
+  figcaption {
+    font-size: 0.694rem;
+  }
+}
+
+.big-quote {
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  font-size: 1.44rem;
+  max-width: none;
+  margin: 64px;
+  padding-left: 32px;
+  border-left: 4px solid hsl(194.33, 0%, 88.76%);
+}
+@media (max-width: 480px) {
+  .big-quote {
+    font-size: 1rem;
+    margin: 64px 0;
   }
 }
 
 .project-details h2 {
-  font-size: 1.4143em;
+  font-size: 1.728rem;
+  margin-bottom: 8px;
 }
 .project-details h3 {
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 16px;
   margin-bottom: 8px;
 }
-.project-details p, .project-details a {
-  font-size: 0.707em;
+.project-details p, .project-details blockquote, .project-details a {
+  font-size: 0.833rem;
+  font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
+  line-height: 1.1em;
+  margin-bottom: 16px;
+}
+.project-details ul {
+  margin-bottom: 16px;
 }
 .project-details li {
-  font-size: 0.707em;
-  line-height: 1.2em;
+  font-size: 0.833rem;
+  line-height: 1.1em;
   font-family: "JetBrains Mono", "Courier", Helvetica, Arial, mono;
-  margin-left: -16px;
+  margin-left: -8px;
   margin-bottom: 4px;
 }
 
 .resume h2 {
-  line-height: 1.2em;
+  line-height: 1.1em;
 }
 .resume h3 {
   margin: 32px 0 0 0;
+  font-size: 1.728rem;
 }
 .resume li {
   margin-bottom: 4px;
@@ -186,6 +237,7 @@ figcaption {
   padding: 0;
 }
 .resume .grid-33 h3 {
+  margin-top: 4px;
   margin-bottom: 8px;
 }
 
@@ -194,12 +246,18 @@ figcaption {
 }
 @media (max-width: 480px) {
   .position-title {
-    font-size: 0.707em;
+    font-size: 0.833rem;
   }
 }
 
+.about h2 {
+  font-size: 1.728rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
 header {
-  padding: 128px 0 0 0;
+  padding: 64px 0 0 0;
   margin: 0 0 64px 0;
 }
 header a, header a.logo:focus {
@@ -211,7 +269,7 @@ header a, header a.logo:focus {
 }
 @media (max-width: 480px) {
   .site-nav {
-    font-size: 0.707em;
+    font-size: 0.833rem;
   }
 }
 @media (max-width: 480px) {
@@ -228,7 +286,7 @@ header a, header a.logo:focus {
 }
 
 a.logo, a.logo:focus {
-  font-size: 1.4143em;
+  font-size: 1.728rem;
   font-weight: 800;
   margin: 0 32px 0 0;
 }
@@ -267,7 +325,7 @@ footer {
 }
 footer .social-links {
   margin: 0 0 8px -8px;
-  font-size: 0.707em;
+  font-size: 0.833rem;
 }
 footer .social-links a {
   padding: 0 8px 0 8px;
@@ -275,7 +333,7 @@ footer .social-links a {
 }
 
 .copyright {
-  font-size: 0.707em;
+  font-size: 0.833rem;
   margin: 8px 0 0 0;
 }
 .copyright a {
@@ -325,9 +383,9 @@ body {
 }
 
 h1, h4, h3, h2 {
-  font-size: 2.827em;
+  font-size: 2.986rem;
   font-weight: 800;
-  line-height: 1.2em;
+  line-height: 1.1em;
   margin: 0 0 16px 0;
   -o-transition: 0.2s ease-in-out;
   -ms-transition: 0.2s ease-in-out;
@@ -337,30 +395,46 @@ h1, h4, h3, h2 {
 }
 @media (max-width: 480px) {
   h1, h4, h3, h2 {
-    font-size: 1.999em;
+    font-size: 2.488rem;
   }
 }
 
 h2 {
-  font-size: 1.999em;
-  margin: 0 0 8px 0;
+  font-size: 2.488rem;
+  margin: 0 0 32px 0;
+  text-wrap: balance;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2.074rem;
+  }
 }
 
 h3 {
-  font-size: 1.4143em;
+  font-size: 2.074rem;
   margin: 32px 0 24px 0;
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.728rem;
+  }
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.728rem;
   margin: 32px 0 16px 0;
 }
+@media (max-width: 480px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
 
-p, a {
+p, a, blockquote {
   font-weight: 300;
-  line-height: 1.7em;
+  line-height: 1.6em;
   margin: 0 0 16px 0;
-  max-width: 640px;
+  max-width: 72ch;
   -o-transition: 0.2s ease-in-out;
   -ms-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
@@ -374,6 +448,10 @@ strong, b {
 
 em {
   font-style: italic;
+}
+
+section {
+  margin-bottom: 64px;
 }
 
 /*-----Link stuff-----*/
@@ -403,10 +481,6 @@ a:focus {
   border-bottom: 1px solid hsl(194.33, 0%, 88.76%);
   color: hsl(194.33, 0%, 13.15%);
   outline: none;
-}
-
-section {
-  margin-bottom: 128px;
 }
 
 .skip-main:focus, .skip-main:active {
